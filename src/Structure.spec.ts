@@ -19,3 +19,17 @@ test('iterating over each file in the structure', function () {
     ['d1/d2/stars.txt', 'Hello, stars'],
   ]);
 });
+
+test('handling sub-directories', function () {
+  const iterable = walkStructure({
+    first: {
+      second: {
+        third: {
+          file: 'content',
+        },
+      },
+    },
+  });
+
+  expect(Array.from(iterable)).toEqual([['first/second/third/file', 'content']]);
+});

@@ -41,7 +41,7 @@ export class TempDirectory {
       await stat(parsedPath.dir);
     } catch (e) {
       if (e.code === 'ENOENT') {
-        await mkdir(parsedPath.dir);
+        await mkdir(parsedPath.dir, { recursive: true });
       } else {
         throw e;
       }

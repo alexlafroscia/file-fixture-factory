@@ -29,6 +29,23 @@ test('creating a structure in the file system', async function () {
   expect(existsSync(dir.dir)).toBe(false);
 });
 
+test('nesting directories', async function () {
+  const factory = new Factory('fff-Factory-test');
+
+  // Test creation
+  const dir = await factory.createStructure({
+    foo: {
+      bar: {
+        baz: 'bop',
+      },
+    },
+  });
+
+  expect(await dir.read('foo/bar/baz')).toBe('bop');
+
+  await dir.dispose();
+});
+
 test('a factory can clean up all structure files', async function () {
   const factory = new Factory('fff-Factory-test-all');
 
