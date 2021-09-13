@@ -8,6 +8,7 @@
     "node/no-unsupported-features/es-syntax": "off",
     "node/no-missing-import": "off",
 
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off"
   },
   "env": {
