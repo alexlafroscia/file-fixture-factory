@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/alexlafroscia/ripgrep-js/compare/v1.0.1...v1.1.0) (2022-01-20)
+
+### Features
+
+- add method to see if a file or folder exists ([5ed32c9](https://github.com/alexlafroscia/ripgrep-js/commit/5ed32c983e89a1ea6bb34b7779e9d17e17f84087))
+
 ### [1.0.1](https://github.com/alexlafroscia/ripgrep-js/compare/v1.0.0...v1.0.1) (2021-03-19)
 
 ### Bug Fixes
