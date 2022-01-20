@@ -14,6 +14,11 @@ test('creating a structure in the file system', async function () {
     },
   });
 
+  // Test out checking that files and directories exist
+  expect(await dir.exists('index.txt')).toBe(true);
+  expect(await dir.exists('folder')).toBe(true);
+  expect(await dir.exists('nonsense')).toBe(false);
+
   // Test out reading files
   expect(await dir.read('index.txt')).toBe('Hello, world');
   expect(await dir.read('folder/bar.txt')).toBe('Hello, other world');

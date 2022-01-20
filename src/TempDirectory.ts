@@ -37,18 +37,27 @@ export class TempDirectory {
 
     // Ensure directory exists to write file to
     const parsedPath = parse(fullPath);
-    try {
-      await stat(parsedPath.dir);
-    } catch (e: any) {
-      if (e.code === 'ENOENT') {
-        await mkdir(parsedPath.dir, { recursive: true });
-      } else {
-        throw e;
-      }
+    if (!(await this.exists(parsedPath.dir))) {
+      await mkdir(parsedPath.dir, { recursive: true });
     }
 
     // Actually write the file
     await writeFile(fullPath, contents);
+  }
+
+  async exists(filePath: string): Promise<boolean> {
+    const fullPath = this.path(filePath);
+
+    try {
+      await stat(fullPath);
+      return true;
+    } catch (e: any) {
+      if (e.code === 'ENOENT') {
+        return false;
+      } else {
+        throw e;
+      }
+    }
   }
 
   /**
