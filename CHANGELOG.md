@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/alexlafroscia/ripgrep-js/compare/v1.1.0...v2.0.0) (2022-01-22)
+
+### ⚠ BREAKING CHANGES
+
+- The core API for the package has changed to use better naming. To migrate, replace all calls to `createStructure` with a call to `createDirectory` instead.
+
+- rename `createStructure` to `createDirectory` ([dd62f67](https://github.com/alexlafroscia/ripgrep-js/commit/dd62f67ca6bd631928a460b00621a0e072986edb))
+
 ## [1.1.0](https://github.com/alexlafroscia/ripgrep-js/compare/v1.0.1...v1.1.0) (2022-01-20)
 
 ### Features
