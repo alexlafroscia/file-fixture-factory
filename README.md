@@ -37,7 +37,7 @@ afterAll(async function () {
 test('reading and writing files', async () => {
   // Use an object structure to define the contents of the directory
   // Nested objects are supported for sub-directories
-  const tempDir = await factory.createStructure({
+  const tempDir = await factory.createDirectory({
     'README.md': '# Hello, World!',
     src: {
       'index.html': '<h1>A nested file!</h1>',

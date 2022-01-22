@@ -1,7 +1,7 @@
-import { walkStructure } from './Structure';
+import { walk as walkDefinition } from './definition';
 
 test('iterating over each file in the structure', function () {
-  const iterable = walkStructure({
+  const iterable = walkDefinition({
     'index.txt': 'Hello, world',
     d1: {
       'sky.txt': 'Hello, sky',
@@ -21,7 +21,7 @@ test('iterating over each file in the structure', function () {
 });
 
 test('handling sub-directories', function () {
-  const iterable = walkStructure({
+  const iterable = walkDefinition({
     first: {
       second: {
         third: {

@@ -1,20 +1,20 @@
 import { join } from 'path';
 
-export type Structure = {
-  [K: string]: Structure | string;
+export type Definition = {
+  [K: string]: Definition | string;
 };
 
-export function* walkStructure(
-  structure: Structure,
+export function* walk(
+  definition: Definition,
   prependPath = ''
 ): Iterable<[path: string, contents: string]> {
-  for (const [file, value] of Object.entries(structure)) {
+  for (const [file, value] of Object.entries(definition)) {
     const fullPath = join(prependPath, file);
 
     if (typeof value === 'string') {
       yield [fullPath, value];
     } else {
-      yield* walkStructure(value, fullPath);
+      yield* walk(value, fullPath);
     }
   }
 }

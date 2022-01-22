@@ -6,7 +6,7 @@ test('creating a structure in the file system', async function () {
   const factory = new Factory('fff-Factory-test');
 
   // Test creation
-  const dir = await factory.createStructure({
+  const dir = await factory.createDirectory({
     'index.txt': 'Hello, world',
     folder: {
       'bar.txt': 'Hello, other world',
@@ -38,7 +38,7 @@ test('nesting directories', async function () {
   const factory = new Factory('fff-Factory-test');
 
   // Test creation
-  const dir = await factory.createStructure({
+  const dir = await factory.createDirectory({
     foo: {
       bar: {
         baz: 'bop',
@@ -55,10 +55,10 @@ test('a factory can clean up all structure files', async function () {
   const factory = new Factory('fff-Factory-test-all');
 
   const [first, second] = await Promise.all([
-    factory.createStructure({
+    factory.createDirectory({
       'foo.txt': 'foo',
     }),
-    factory.createStructure({
+    factory.createDirectory({
       'bar.txt': 'bar',
     }),
   ]);
