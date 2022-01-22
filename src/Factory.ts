@@ -39,9 +39,7 @@ export class Factory {
    * Clean up all temporary directories created by this factory
    */
   async disposeAll(): Promise<void> {
-    for (const dir of this.directories) {
-      await dir.dispose();
-    }
+    await Promise.all([...this.directories].map((dir) => dir.dispose()));
 
     this.directories = new Set();
   }
