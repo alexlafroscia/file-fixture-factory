@@ -16,7 +16,7 @@
     "dist"
   ],
   "repository": {
-    "url": "git@github.com:alexlafroscia/ripgrep-js.git",
+    "url": "git@github.com:alexlafroscia/file-fixture-factory.git",
     "type": "git"
   },
   "author": "Alex LaFroscia <alex@lafroscia.com>",
