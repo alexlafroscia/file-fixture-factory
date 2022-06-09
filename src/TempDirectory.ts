@@ -1,4 +1,4 @@
-import { mkdir, readFile, rmdir, stat, writeFile } from 'fs/promises';
+import { mkdir, readFile, rm, stat, writeFile } from 'fs/promises';
 import { join, parse } from 'path';
 import debug from 'debug';
 
@@ -64,7 +64,7 @@ export class TempDirectory {
    * Removes the temp directory and all contents
    */
   async dispose(): Promise<void> {
-    await rmdir(this.dir, { recursive: true });
+    await rm(this.dir, { recursive: true });
   }
 
   toString(): string {
