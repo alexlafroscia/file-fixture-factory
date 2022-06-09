@@ -21,7 +21,7 @@ Note: this package is tested against Node 14, the current LTS release at the tim
 
 ## Usage
 
-Below is an example Jest test that shows how you might use this library in a test file.
+Below is an example test that shows how you might use this library in a test file.
 
 ```typescript
 import { Factory } from 'file-fixture-factory';

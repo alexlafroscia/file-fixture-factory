@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest';
 import { walk as walkDefinition } from './definition';
 
 test('iterating over each file in the structure', function () {

@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest';
 import { TempDirectory } from './TempDirectory';
 
 test('it can be coerced to a string', function () {

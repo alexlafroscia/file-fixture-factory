@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest';
 import { stat } from 'fs/promises';
 import { existsSync } from 'fs';
 import { Factory } from './Factory';
