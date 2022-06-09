@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/alexlafroscia/file-fixture-factory/compare/v2.0.1...v3.0.0) (2022-06-09)
+
+### ⚠ BREAKING CHANGES
+
+- This API is only available on Node 14.14 or later
+
+### Bug Fixes
+
+- use non-deprecated util for removing directory ([d4d08f5](https://github.com/alexlafroscia/file-fixture-factory/commit/d4d08f52ba0d4d1d16eef1b04ab61ef7e0d6469d))
+
 ### [2.0.1](https://github.com/alexlafroscia/file-fixture-factory/compare/v2.0.0...v2.0.1) (2022-02-18)
 
 ## [2.0.0](https://github.com/alexlafroscia/ripgrep-js/compare/v1.1.0...v2.0.0) (2022-01-22)
