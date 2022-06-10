@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/alexlafroscia/file-fixture-factory/compare/v3.0.0...v3.1.0) (2022-06-10)
+
+### Features
+
+- expose `TempDirectory` class ([44baa1c](https://github.com/alexlafroscia/file-fixture-factory/commit/44baa1cf00287b128fc19ed1ef533718bbffd7e9))
+
 ## [3.0.0](https://github.com/alexlafroscia/file-fixture-factory/compare/v2.0.1...v3.0.0) (2022-06-09)
 
 ### ⚠ BREAKING CHANGES
