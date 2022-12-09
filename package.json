@@ -31,7 +31,7 @@
     "@movable/prettier-config": "^0.3.6",
     "@tsconfig/node14": "^1.0.0",
     "@types/debug": "^4.1.5",
-    "@types/node": "^17.0.10",
+    "@types/node": "^18.11.12",
     "husky": "^7.0.0",
     "lint-staged": "^12.1.2",
     "pinst": "^2.1.4",
