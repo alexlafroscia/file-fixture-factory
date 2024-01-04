@@ -6,7 +6,7 @@ export type Definition = {
 
 export function* walk(
   definition: Definition,
-  prependPath = ''
+  prependPath = '',
 ): Iterable<[path: string, contents: string]> {
   for (const [file, value] of Object.entries(definition)) {
     const fullPath = join(prependPath, file);

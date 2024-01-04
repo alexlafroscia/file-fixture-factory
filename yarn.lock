@@ -1286,6 +1286,7 @@ __metadata:
     husky: "npm:^7.0.0"
     lint-staged: "npm:^12.1.2"
     pinst: "npm:^2.1.4"
+    prettier: "npm:^3.1.1"
     standard-version: "npm:^9.1.0"
     typescript: "npm:^4.1.5"
     vitest: "npm:^0.29.1"
@@ -2819,6 +2820,15 @@ __metadata:
   bin:
     prettier: bin-prettier.js
   checksum: 4041ff87d6cba9134a8e0eb74a9e7f50f7091de6b95f5a6fb1928795c7d0584ae46806e0d75588fbc912b2cda2439d28a14fb84416946384cf71d60f5a0a68a6
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "prettier@npm:3.1.1"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: facc944ba20e194ff4db765e830ffbcb642803381f0d2033ed397e79904fa4ccc877dc25ad68f42d36985c01d051c990ca1b905fb83d2d7d65fe69e4386fa1a3
   languageName: node
   linkType: hard
 
