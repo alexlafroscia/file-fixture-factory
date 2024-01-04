@@ -17,7 +17,7 @@ The package can be installed from `npm` under the name `file-fixture-factory`:
 yarn add -D file-fixture-factory
 ```
 
-Note: this package is tested against Node 14, the current LTS release at the time of writing. Other versions might work, but your results may vary!
+Note: the oldest version of Node that is tested against is version 18. Other versions might work, but your results may vary!
 
 ## Usage
 
