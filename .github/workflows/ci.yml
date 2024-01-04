@@ -7,7 +7,7 @@ jobs:
     name: Check Formatting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - uses: volta-cli/action@v4
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -29,7 +29,7 @@ jobs:
       matrix:
         node-version: ['18', '20']
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - uses: volta-cli/action@v4
         with:
           node-version: ${{ matrix.node-version }}
