@@ -23,7 +23,7 @@ jobs:
       - run: yarn prettier --check .
 
   test:
-    name: Test
+    name: Test (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
