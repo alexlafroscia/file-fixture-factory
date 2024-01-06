@@ -8,12 +8,22 @@ import { TempDirectory } from './TempDirectory';
 
 const log = debug('fff:Factory');
 
+export interface FactoryOptions {
+  /**
+   * An alternate location to create the fixture directories, rather than the OS temp directory
+   *
+   * This can be useful for compatibility with tools that are picky about where the temp
+   * directory is made.
+   */
+  root?: string;
+}
+
 export class Factory {
   private tempPath: string;
   private directories: Set<TempDirectory> = new Set();
 
-  constructor(prefix: string) {
-    this.tempPath = join(tmpdir(), prefix + '-');
+  constructor(prefix: string, { root = tmpdir() }: FactoryOptions = {}) {
+    this.tempPath = join(root, prefix + '-');
   }
 
   /**

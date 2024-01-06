@@ -72,3 +72,17 @@ test('a factory can clean up all structure files', async function () {
   expect(existsSync(first.dir)).toBe(false);
   expect(existsSync(second.dir)).toBe(false);
 });
+
+test('controlling where the temp dir is made', async function () {
+  const factory = new Factory('fff-Factory-test-custom-location', {
+    root: __dirname,
+  });
+
+  const dir = await factory.createDirectory({
+    'foo.txt': 'foo',
+  });
+
+  expect(dir.dir).contains(__dirname);
+
+  await factory.disposeAll();
+});
