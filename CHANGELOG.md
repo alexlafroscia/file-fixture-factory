@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/alexlafroscia/file-fixture-factory/compare/v3.1.0...v4.0.0) (2024-01-06)
+
+### ⚠ BREAKING CHANGES
+
+- Node 18 is now the minimum version that is tested against. Older versions might work, but use them at your own risk.
+
+### Features
+
+- add the `root` option ([#372](https://github.com/alexlafroscia/file-fixture-factory/issues/372)) ([2756453](https://github.com/alexlafroscia/file-fixture-factory/commit/27564537cca101de733c819dcd635c58985818e6))
+
+- Test against node@18 and node@20, Migrate to yarn@4 (#370) ([13e583e](https://github.com/alexlafroscia/file-fixture-factory/commit/13e583e63fa409723b8efd098dd75bd5a01e9c19)), closes [#370](https://github.com/alexlafroscia/file-fixture-factory/issues/370)
+
 ## [3.1.0](https://github.com/alexlafroscia/file-fixture-factory/compare/v3.0.0...v3.1.0) (2022-06-10)
 
 ### Features
