@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/alexlafroscia/file-fixture-factory/compare/v4.0.0...v4.0.1) (2024-01-06)
+
+### Bug Fixes
+
+- update scripts to build correctly in yarn@4 ([17b7234](https://github.com/alexlafroscia/file-fixture-factory/commit/17b7234b6c080bab96a606eea98ce79cf123e34e))
+
 ## [4.0.0](https://github.com/alexlafroscia/file-fixture-factory/compare/v3.1.0...v4.0.0) (2024-01-06)
 
 ### ⚠ BREAKING CHANGES
